@@ -1,21 +1,50 @@
 \documentclass[b5paper,fleqn]{ltjsarticle}
-\usepackage{datenumber}
+\usepackage{datenumber,amsthm,latexsym,graphicx}
 \title{数学デーin大阪}
 \author{大阪分散技術コミュニティ}
-\setdatenumber{2019}{1}{18}\newcounter{numcount}
-\newcommand\tit[1]{\stepcounter{numcount}\vskip10pt\noindent{\bf\large 第\thenumcount 回} ---
-#1\hfill\datedate\vskip5pt \addtocounter{datenumber}{7}\setdatebynumber{\thedatenumber}}
+\newcounter{numcount}
+\newcommand\tit[1]{\newpage\noindent{\bf\large 第\thenumcount 回} ---
+#1\hfill\datedate\addtocounter{datenumber}{7}\setdatebynumber{\thedatenumber}\vskip5pt}
+\newtheorem{theo}{定理}
+\newtheorem{defi}[theo]{定義}
+\newtheorem{prop}[theo]{命題}
+\newtheorem{exam}[theo]{例}
+\newtheorem*{proo}{証明}
+\newtheorem{lemm}[theo]{補題}
+\newcommand\image{\includegraphics[width=.8\hsize]{resource/\thenumcount.jpg}\vskip5pt}
+\newcommand\contents{{\bf 内容紹介:\vskip5pt}\stepcounter{numcount}}
 \begin{document}
 \maketitle
 \begin{abstract}
-本文章は数学デーの定義を与え、過去の活動を記録することを目的とする。
+本文章は数学デーの解説と、過去の活動を記録することを目的とする。
 \end{abstract}\vskip30pt
-\tit{普遍性を求めて}
+まずは定義を与えよう。
+\defi{数学デーとは数学を楽しむ同好の士が集う場、及びその日をいう。}
+\begin{exam}$\phi$カフェ数学デー, ソノリテ数学デー, 数学デーin大阪, 数学デーin札幌\end{exam}
+\begin{prop}数学デーとは理系の人が参加するものである。\end{prop}
+長らく議論された命題である。一見正しそうではあるが、東京や大阪で明らかな反例が見つかったことにより否定的に解決された。
+\begin{theo}数学デーは楽しい\end{theo}
+\begin{proo}この定理に関して、私は真に驚くべき証明を見つけたが、ここに書くには狭すぎる。\Box\end{proo}
+数学デーin大阪では、開催毎にサブタイトルと数式を設定している。次頁からこれまでの活動を紹介する。
+\setdatenumber{2019}{1}{12}\tit{積分ができるとは限らない}
+\[n=p+q, \exists p,q:prime number\]
+\image
+\contents
+ゴールドバッハの予想、整数論でオススメの本
+\setdatenumber{2019}{1}{18}\tit{普遍性を求めて}
 \[[n]_q:=\frac{1-q^n}{1-q}\]
+\image
+\contents
+数学デー公式とSkype、バーゼル問題、立方体の万華鏡、計算尺の紹介、イデアル、素イデアル、絶対数学、測度論、量子コンピュータ、圏論でオススメの本、初めによむべき黒川先生の本は？1/3で割るってどういうこと？
 \tit{全ての概念はKan拡張である}
 \[\eta\left(-\frac{1}{\tau}\right):=\sqrt{\frac{\tau}{i}}\eta(\tau)\]
+\image
+\contents
+直交多項式、\TeX をwebページで使うには?、数学パズル--コインの裏表、群論超入門、灘中の入試問題
 \tit{マテーマタ「学ばれるべきもの」}
 \[\zeta(s)=\sum^\infty_{n=1}\frac{1}{n^s}\]
 comming soon
+
+
 
 \end{document}
