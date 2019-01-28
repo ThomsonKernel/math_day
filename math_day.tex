@@ -1,17 +1,16 @@
 \documentclass[b5paper,fleqn]{ltjsarticle}
-\usepackage{datenumber,amsthm,latexsym,graphicx}
+\usepackage{datenumber,amsthm,amsmath,latexsym,graphicx,hyperref}
 \title{数学デーin大阪}
-\author{大阪分散技術コミュニティ}
 \newcounter{numcount}
 \newcommand\tit[1]{\newpage\noindent{\bf\large 第\thenumcount 回} ---
-#1\hfill\datedate\addtocounter{datenumber}{7}\setdatebynumber{\thedatenumber}\vskip5pt}
+#1\hfill\datedate\addtocounter{datenumber}{7}\setdatebynumber{\thedatenumber}\vskip1pt}
 \newtheorem{theo}{定理}
 \newtheorem{defi}[theo]{定義}
 \newtheorem{prop}[theo]{命題}
 \newtheorem{exam}[theo]{例}
 \newtheorem*{proo}{証明}
 \newtheorem{lemm}[theo]{補題}
-\newcommand\image{\includegraphics[width=.8\hsize]{resource/\thenumcount.jpg}\vskip5pt}
+\newcommand\image{\vskip18pt\includegraphics[width=.8\hsize]{resource/\thenumcount.jpg}\vskip5pt}
 \newcommand\contents{{\bf 内容紹介:\vskip5pt}\stepcounter{numcount}}
 \begin{document}
 \maketitle
@@ -20,14 +19,14 @@
 \end{abstract}\vskip30pt
 まずは定義を与えよう。
 \defi{数学デーとは数学を楽しむ同好の士が集う場、及びその日をいう。}
-\begin{exam}$\phi$カフェ数学デー, ソノリテ数学デー, 数学デーin大阪, 数学デーin札幌\end{exam}
+\begin{exam}$\phi$カフェ数学デー, みらいけん数学デー, 数学デーin大阪, 数学デーin札幌\end{exam}
 \begin{prop}数学デーとは理系の人が参加するものである。\end{prop}
 長らく議論された命題である。一見正しそうではあるが、東京や大阪で明らかな反例が見つかったことにより否定的に解決された。
 \begin{theo}数学デーは楽しい\end{theo}
 \begin{proo}この定理に関して、私は真に驚くべき証明を見つけたが、ここに書くには狭すぎる。\Box\end{proo}
 数学デーin大阪では、開催毎にサブタイトルと数式を設定している。次頁からこれまでの活動を紹介する。
 \setdatenumber{2019}{1}{12}\tit{積分ができるとは限らない}
-\[n=p+q, \exists p,q:prime number\]
+\[n=p+q, \exists p,q:\text{prime number}\]
 \image
 \contents
 ゴールドバッハの予想、整数論でオススメの本
@@ -45,6 +44,22 @@
 \[\zeta(s)=\sum^\infty_{n=1}\frac{1}{n^s}\]
 comming soon
 
-
+\newpage
+\thispagestyle{empty}
+\vspace*{\stretch{1}}
+\begin{flushright}
+\begin{minipage}{0.5\hsize}
+  \begin{tabular}{|ll}
+  \multicolumn{2}{|l}{数学デーin大阪 運営}\\[10pt]
+  名前: &\href{https://twitter.com/ThomsonKernel}{西村一輝/ThomsonKernel}\\
+  所属: &\href{https://sites.google.com/view/osaka-dtc}{大阪分散技術コミュニティ}\\
+  連絡先: & \href{mailto:thomsonkernel@gmail.com}{thomsonkernel@gmail.com}\\
+  \\
+  名前: &\href{https://twitter.com/myao_s_moking}{宮尾哲亮/myao}\\
+  所属: &\href{https://kansai-lisp-useres.connpass.com}{関西Lispユーザ会}\\
+  連絡先: & \href{mailto:tetu60u@yahoo.co.jp}{tetu60u@yahoo.co.jp}
+  \end{tabular}
+\end{minipage}
+\end{flushright}
 
 \end{document}
