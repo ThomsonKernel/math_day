@@ -1,19 +1,13 @@
 6/14(金)解析数論講義#1
 6/19(水)量子解析とテータ特殊値
 6/21(金)深層学習(Goodfellow)読書会#1
-
 6/26(水)計算機科学と数学
-https://connpass.com/event/134666/
 6/28(金)解析数論講義#2
-https://connpass.com/event/134834/
 7/3(水)有限次元リー代数からカッツ・ムーディ・リー代数
-https://connpass.com/event/135615
 7/5(金)計算量への数理論理学的アプローチ
-https://connpass.com/event/134707/
-
 7/10(水)ルベーグ積分 TBU
 7/12(金)Goodfellow2 TBS
-7/17(水)wanted
+7/17(水)多重ゼータ値入門
 7/19(金)計算量への数理論理学的アプローチ2 TBS
 7/24(水)wanted
-7/26(水)wanted
+7/26(金)wanted
