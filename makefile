@@ -1,4 +1,4 @@
-NAME:=$(notdir ${CURDIR})
+NAME:=$(lastword $(notdir ${CURDIR}))
 TEXs:=$(shell echo *.tex)
 all:${NAME}.pdf
 	open ${NAME}.pdf
